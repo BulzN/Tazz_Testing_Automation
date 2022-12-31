@@ -118,3 +118,19 @@
 2022-12-30 19:07:31,639: INFO: test_1: Input first time supplementary info about address
 2022-12-30 19:07:43,642: INFO: test_1: Searching for the Restaurant 'Big Belly' & selecting it
 2022-12-30 19:07:58,952: INFO: test_1: Placing an order from the restaurant
+2022-12-31 19:50:21,590: INFO: test_1: Input Address in order to search
+2022-12-31 19:50:29,525: INFO: test_1: Input first time supplementary info about address
+2022-12-31 19:50:40,985: INFO: test_1: Searching for the Restaurant 'Big Belly' & selecting it
+2022-12-31 19:50:58,273: INFO: test_1: Placing an order from the restaurant
+2022-12-31 19:53:30,232: INFO: test_1: Input Address in order to search
+2022-12-31 19:53:38,171: INFO: test_1: Input first time supplementary info about address
+2022-12-31 19:53:48,167: INFO: test_1: Searching for the Restaurant 'Big Belly' & selecting it
+2022-12-31 19:54:05,498: INFO: test_1: Placing an order from the restaurant
+2022-12-31 19:55:57,637: INFO: test_1: Input Address in order to search
+2022-12-31 19:56:05,543: INFO: test_1: Input first time supplementary info about address
+2022-12-31 19:56:15,711: INFO: test_1: Searching for the Restaurant 'Big Belly' & selecting it
+2022-12-31 19:56:33,022: INFO: test_1: Placing an order from the restaurant
+2022-12-31 19:59:07,970: INFO: test_1: Input Address in order to search
+2022-12-31 19:59:15,927: INFO: test_1: Input first time supplementary info about address
+2022-12-31 19:59:25,859: INFO: test_1: Searching for the Restaurant 'Big Belly' & selecting it
+2022-12-31 19:59:43,229: INFO: test_1: Placing an order from the restaurant

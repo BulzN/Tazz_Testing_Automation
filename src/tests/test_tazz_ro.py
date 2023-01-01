@@ -10,9 +10,8 @@ import time
 @pytest.mark.usefixtures("setup")
 class TestTazz(ReportClass):
 
-    # Test I - Testam functionalitatea site-ului prin introducerea unor date legate de utilizator
-    # alaturi de selectarea anumitor produse introducandu-le in cos de la o anumita categorie de restaurant introduse
-    # de utilizator
+    # Test I - Testam functionalitatea site-ului prin introducerea unor date legate de utilizator despre unde să fie
+    # servită comanda
 
     def test_1(self, setup):
         log = self.getLogger()
@@ -26,6 +25,10 @@ class TestTazz(ReportClass):
         log.info("Input first time supplementary info about address")
         time.sleep(1.756)
 
+    # Testul II - Testăm selectarea anumitor produse introducandu-le in cos de la o anumita categorie de restaurant
+    # introdusă de utilizator
+    def test_2(self, setup):
+        log = self.getLogger()
         intro_page= IntroPage(self.driver)
 
         intro_page.input_restaurant_search()
@@ -37,7 +40,4 @@ class TestTazz(ReportClass):
         time.sleep(1.765)
 
 
-    # # TEST II -
-
-    # def test_2(self, setup):
-    #     log = self.getLogger()
+    # TEST III - Testăm funcționalitatea creării unui cont nou la nivelul site-ului

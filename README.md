@@ -2,86 +2,137 @@
 
 Automation Framework in Python for the public site 'tazz.ro'
 
+#### (Short Detail)
+All the principles in which this project was based of can be transposed to other website's with ease
+
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
+These instructions will get you a copy of the project up and running on your local machine in order to verify the 
+integrity of the given projects
 
 ### Prerequisites
 
-You will need to install an Integrated Development Environment (IDE) in orther to us
+You will need to install an Integrated Development Environment (IDE) in order to verify the project. I recommend the
+PyCharm one, having a lot of features.
+For sure, you will need Python installed on your device, I recommend Python 3.10
+
+For windows:
 
 ```
-Give examples
+C:\> python --version
+Python 3.8.4
 ```
+
+For macOS:
+
+```
+python3 --version
+```
+
+For all the listings of the Python versions (MacOS):
+```
+which -a python
+```
+
+It will check automatically if you have python installed on your system. If not, it will redirect you
+to Microsoft Store or for an Apple type of device, I suggest going through the official website in order to get it downloaded. 
+I recommend to install it through a full installer on an of the operating systems mentioned above
+```
+https://www.python.org/downloads/
+```
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+After that, we can get the code from GitHub directly though the HTTPS link cloning it, or just downloading the project and placing 
+it where the IDE saves the project's
 
-Say what the step will be
+After that, we will need some libraries in order to properly test if the framework accomplishes its
+task successfully
 
-```
-Give the example
-```
-
-And repeat
+We will need to install Selenium, Pytest and Pytest-html. I have developed it in the Page Object Models format (POM)
 
 ```
-until finished
+pip install selenium
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+```
+pip install pytest
+```
+
+```
+pip install pytest-html
+```
+
+After all of this was set in order, we can start running the script tests
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+In order to run the tests, we will need to execute in the IDE built-in terminal the following command:
 
-### Break down into end to end tests
+```
+pytest
+```
 
-Explain what these tests test and why
+The test cases where written so that they could be tested on the Google Chrome browser and Microsoft Edge browser.
+
+In order to do so, it is required some drivers. They are already in the project. But, as time passes and browsers get
+updated, the versions of this drivers will change with time. In order to properly run the tests, I strongly suggest 
+to check the version of the browser and change the drivers corresponding to the latest version of it
+
+* For Google Chrome:
+```
+https://chromedriver.chromium.org/downloads
+```
+
+* For Microsoft Edge:
+```
+https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+```
+
+After that, you can start running the tests smoothly
+
+In order to choose from which browser you can run the tests and get a report file from these, run the following commands:
+* Google Chrome:
+```
+pytest --browser_name=Chrome --html=report_chrome.html
+```
+* Microsoft Edge:
+```
+pytest --browser_name=Edge --html=report_edge.html
+```
+
+
+### The break-down into end-to-end tests
+
+This tests are done in order to verify the full integrity and operability of the website 'tazz.ro'.
+
+From where a user could selected a certain item from a menu
 
 ```
 Give an example
 ```
 
-### And coding style tests
+To registering a new account
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Selenium](https://www.selenium.dev) - The web framework used
+* [Github](https://github.com) - Git repository hosting used
+* [Git](https://git-scm.com) - Version Control System used
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Bulzan Alex Călin** - *Initial work* - [BulzN](https://github.com/BulzN)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is not licensed under any license
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Mihai Postu - Trainer - ITSchool
+* Colleagues from the ITSchool course
+* To all the free open-source explanations from the web

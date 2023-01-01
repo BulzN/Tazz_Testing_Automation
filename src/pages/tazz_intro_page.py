@@ -3,7 +3,7 @@
 # Cu trecerea timpului, acest modul .py va fi îmbunătățit, introducând mai multe funții abstracte/generale alături de
 # diverși locatori unici de identificare
 
-
+from selenium.webdriver.common.action_chains import ActionChains
 from seleniumpagefactory.Pagefactory import PageFactory
 from selenium.webdriver import Keys
 import time
@@ -22,28 +22,34 @@ class IntroPage(PageFactory):
         # General Input Text
         "input_search_txt":
             ("XPATH", "/html/body/tz-panel-search/div[1]/div/div[2]/div[2]/input"),
-        # NOT_GENERAL ( Preferred custom XPATH ) - Test 1
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
         "select_big_belly_txt":
             ("XPATH", "/html/body/header/tz-header-box/div/div[1]/tz-search-box/div[1]/div[3]/div[1]/div[1]"),
-        # NOT_GENERAL ( Preferred custom XPATH ) - Test 1
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
         "select_big_belly_btn":
             ("XPATH", "//*[@id='restaurants']/div/div/div[2]/div/div/div/div/div[2]"),
-        # NOT_GENERAL ( Preferred custom XPATH ) - Test 1
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
         "reference_pizza":
             ("XPATH", "//*[@id='subcategory-13005-product-133422']/div/div"),
-        # NOT_GENERAL ( Preferred custom XPATH ) - Test 1
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
         "choose_belly":
             ("XPATH", "//*[@id='subcategory-13005-product-133426']/div/div"),
-        # NOT_GENERAL ( Preferred custom XPATH ) - Test 1
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
         "second_reference_pizza":
             ("XPATH", "/html/body/tz-dialog/div[1]/div/div[2]/div/tz-product-dialog/div/div[1]/div[3]/div[3]/div[1]/div[3]/div[8]/div[1]/label/span"),
-        # NOT_GENERAL ( Preferred custom XPATH ) - Test 1
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
         "choose_second_belly":
             ("XPATH",
              "/html/body/tz-dialog/div[1]/div/div[2]/div/tz-product-dialog/div/div[1]/div[3]/div[3]/div[1]/div[3]/div[11]/div[1]/label"),
-        # NOT_GENERAL ( Preferred custom XPATH ) - Test 1
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
         "select_final_both_btn":
-            ("XPATH", "/html/body/tz-dialog/div[1]/div/div[2]/div/tz-product-dialog/div/div[2]/div/div/button")
+            ("XPATH", "/html/body/tz-dialog/div[1]/div/div[2]/div/tz-product-dialog/div/div[2]/div/div/button"),
+        # NOT_GENERAL ( Preferred custom XPATH ) - Test 2
+        "back_to_menu":
+            ("XPATH", "/html/body/tz-dialog/div[1]"),
+        # General Intro Page BTN
+        "intro_page_btn":
+            ("XPATH", "/html/body/header/tz-header-box/div/div[1]/div/a")
     }
 
     def input_restaurant_search(self):
@@ -83,4 +89,12 @@ class IntroPage(PageFactory):
         self.choose_second_belly.click()
         time.sleep(2)
         self.select_final_both_btn.click()
+        time.sleep(2)
+
+        # Context menu stays open, so close it - General Method
+        ActionChains(self.driver).send_keys(Keys.ESCAPE).perform()
+        time.sleep(2)
+
+        # Going back to intro page
+        self.intro_page_btn.click()
         time.sleep(2)

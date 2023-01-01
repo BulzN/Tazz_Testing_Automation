@@ -110,7 +110,25 @@ This tests are done in order to verify the full integrity and operability of the
 From where a user could selected a certain item from a menu
 
 ```
-Give an example
+        # SCROLLING SCRIPT
+        ref = self.reference_pizza
+        coord = ref.location_once_scrolled_into_view
+        self.driver.execute_script('window.scrollTo({}, {});'.format(coord['x'], coord['y']))
+        time.sleep(3)
+        # END OF SCROLLING SCRIPT
+
+        self.choose_belly.click()
+        time.sleep(2)
+
+        ref2 = self.second_reference_pizza
+        coord = ref2.location_once_scrolled_into_view
+        self.driver.execute_script('window.scrollTo({}, {});'.format(coord['x'], coord['y']))
+        time.sleep(3)
+
+        self.choose_second_belly.click()
+        time.sleep(2)
+        self.select_final_both_btn.click()
+        time.sleep(2)
 ```
 
 To registering a new account

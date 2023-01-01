@@ -3,6 +3,7 @@
 from src.pages.homepage import HomepageTazz
 from src.utilities.ReportClass import ReportClass
 from src.pages.tazz_intro_page import IntroPage
+from src.pages.account_creation_tazz import AccountCreation
 import pytest
 import time
 
@@ -29,7 +30,7 @@ class TestTazz(ReportClass):
     # introdusă de utilizator
     def test_2(self, setup):
         log = self.getLogger()
-        intro_page= IntroPage(self.driver)
+        intro_page = IntroPage(self.driver)
 
         intro_page.input_restaurant_search()
         log.info("Searching for the Restaurant 'Big Belly' & selecting it")
@@ -39,5 +40,27 @@ class TestTazz(ReportClass):
         log.info("Placing an order from the restaurant")
         time.sleep(1.765)
 
+    # TEST III - Testâm căutarea unor altor produse pe pagina principală
+    # alături de testarea coșului de cumpărături cu checkout
 
-    # TEST III - Testăm funcționalitatea creării unui cont nou la nivelul site-ului
+    def test_3(self,setup):
+        log = self.getLogger()
+        intro_page = IntroPage(self.driver)
+
+        intro_page.other_acquisition()
+        log.info("Trying to search for another product and going to the checkout")
+        time.sleep(1.765)
+
+    # TEST IV - Testăm funcționalitatea creării unui cont nou la cererea site-ului în momentul de checkout ( dar fără
+    # să confirmăm contul, datorită numărului unic de verificare la nivel telefonic )
+    def test_4(self, setup):
+        log = self.getLogger()
+        acc_creation = AccountCreation(self.driver)
+
+        acc_creation.checkout_step()
+        log.info("Confirming the checkout, but prompting on generation of a new account")
+        time.sleep(1.765)
+
+        acc_creation.human_verification()
+        log.info("Confirming the human verification and going trough the process")
+        time.sleep(1.765)

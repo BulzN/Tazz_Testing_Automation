@@ -31,21 +31,22 @@ class HomepageTazz(PageFactory):
         "save_address_btn":
             ("XPATH",
              "/html/body/tz-dialog/div[1]/div/div[2]/div/tz-address-dialog/div/tz-address-dialog-map/div/div[2]/div[2]/div/div[5]/div"),
+
     }
 
     def input_location_search(self):
         self.input_address.set_text("Strada Ceahlău 77, Cluj-Napoca")
-        time.sleep(2)
+        time.sleep(1.765)
         self.continue_btn.click()
-        time.sleep(2)
+        time.sleep(1.765)
         self.confirm_btn.click()
-        time.sleep(2)
+        time.sleep(1.765)
 
     def input_data_address(self):
         self.input_details_address.send_keys("Căminul V, Camera 31")
-        time.sleep(2)
+        time.sleep(1.765)
         self.home_type_btn.click()
-        time.sleep(2)
+        time.sleep(1.765)
         self.save_address_btn.click()
-        time.sleep(2)
+        time.sleep(1.765)
 

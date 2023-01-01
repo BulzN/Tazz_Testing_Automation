@@ -102,6 +102,17 @@ pytest --browser_name=Chrome --html=report_chrome.html
 pytest --browser_name=Edge --html=report_edge.html
 ```
 
+Also, in order to run these tests, you need to change the directory to where the tests are. You need to change
+like the following:
+
+```
+cd src
+```
+```
+cd tests
+```
+
+Only then you can run the tests correctly
 
 ### The break-down into end-to-end tests
 

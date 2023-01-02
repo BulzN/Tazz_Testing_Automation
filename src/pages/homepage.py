@@ -1,6 +1,7 @@
-# Homepage - tazz.ro
-# Prima vizita a utilizatorului către website, selectând deasemenea primele date importante legate de comanda acestuia
-# (Personale) sau selectarea crearii unui cont nou
+# Homepage - www.tazz.ro
+# Prima vizită a utilizatorului către website, selectând deasemenea primele date importante legate de comanda acestuia
+# (Personale)
+
 
 from seleniumpagefactory.Pagefactory import PageFactory
 from selenium.webdriver import Keys
@@ -50,3 +51,4 @@ class HomepageTazz(PageFactory):
         self.save_address_btn.click()
         time.sleep(1.765)
 
+# EOF

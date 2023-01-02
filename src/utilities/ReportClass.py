@@ -19,3 +19,5 @@ class ReportClass:
 
         logger.setLevel(logging.DEBUG)
         return logger
+
+# EOF

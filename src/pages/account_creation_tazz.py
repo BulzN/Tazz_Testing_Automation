@@ -1,5 +1,5 @@
 # account_creation_tazz.py - Modul .py care execută crearea unui cont. Deoarece acesta are nevoie și de un human
-# verification, nu am putut să mai continui cu testul, acesta fiind un proces care nu poate fi automatizat
+# verification, procesul trebuie executat manual de către tester, neavând acces de development
 
 from selenium.webdriver import ActionChains
 from seleniumpagefactory.Pagefactory import PageFactory
@@ -34,7 +34,9 @@ class AccountCreation(PageFactory):
         "begin_new_account_btn":
             ("XPATH", "/html/body/main/div/div[1]/a"),
         "reference_verification":
-            ("XPATH", "//*[@id='root']/div/form/div[1]")
+            ("XPATH", "//*[@id='root']/div/form/div[1]"),
+        "main_menu_btn":
+            ("XPATH", "/html/body/header/a")
     }
 
     def checkout_step(self):
@@ -47,12 +49,13 @@ class AccountCreation(PageFactory):
         self.begin_human_verification_btn.click()
         time.sleep(1.765)
 
+        # Waiting for the persons to do manually the human verification
+
         element = self.reference_verification
         action = ActionChains(self.driver)
         action.move_to_element(element)
         action.perform()
         time.sleep(15)
-
 
     def introduce_data_account(self):
         self.begin_new_account_btn.click()
@@ -67,4 +70,7 @@ class AccountCreation(PageFactory):
         time.sleep(1.765)
         self.accept_conditions_btn.click()
         time.sleep(1.765)
+        self.main_menu_btn.click()
+        time.sleep(1.765)
 
+# EOF

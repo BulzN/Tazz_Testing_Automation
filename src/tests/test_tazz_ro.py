@@ -68,3 +68,16 @@ class TestTazz(ReportClass):
         acc_creation.introduce_data_account()
         log.info("Introducing data about account & finishing with the process")
         time.sleep(1.765)
+
+    # TEST V - Căutarea filtrată a anumitor vânzători
+    def test_5(self, setup):
+        log = self.getLogger()
+        intro_page = IntroPage(self.driver)
+
+        intro_page.custom_search()
+        log.info("Doing a custom search with filters for some restaurants")
+        time.sleep(1.765)
+
+    # EOT - END OF TESTS
+
+# EOF

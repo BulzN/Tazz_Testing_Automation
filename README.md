@@ -116,9 +116,9 @@ Only then you can run the tests correctly
 
 ### The break-down into end-to-end tests
 
-This tests are done in order to verify the full integrity and operability of the website 'tazz.ro'.
+These tests are done in order to verify the full integrity and operability of the website 'tazz.ro'.
 
-From where a user could selected a certain item from a menu
+From where a user could select a certain item from a menu
 
 ```
         # SCROLLING SCRIPT
@@ -148,7 +148,7 @@ To registering a new account
 ## Built With
 
 * [Selenium](https://www.selenium.dev) - The web framework used
-* [Github](https://github.com) - Git repository hosting used
+* [GitHub](https://github.com) - Git repository hosting used
 * [Git](https://git-scm.com) - Version Control System used
 
 

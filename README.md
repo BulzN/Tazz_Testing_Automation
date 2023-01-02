@@ -36,7 +36,7 @@ which -a python
 
 It will check automatically if you have python installed on your system. If not, it will redirect you
 to Microsoft Store or for an Apple type of device, I suggest going through the official website in order to get it downloaded. 
-I recommend to install it through a full installer on an of the operating systems mentioned above
+I recommend to install it through a full installer on one of the operating systems mentioned above
 ```
 https://www.python.org/downloads/
 ```

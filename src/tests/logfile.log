@@ -1,0 +1,93 @@
+2023-01-02 15:21:49,715: INFO: test_1: Input Address in order to search
+2023-01-02 15:21:56,986: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:22:05,539: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:22:29,949: INFO: test_2: Placing an order from the restaurant
+2023-01-02 15:22:57,371: INFO: test_3: Trying to search for another product and going to the checkout
+2023-01-02 15:23:03,541: INFO: test_4: Confirming the checkout, but prompting on generation of a new account
+2023-01-02 15:23:22,444: INFO: test_4: Confirming the human verification and going trough the process
+2023-01-02 15:23:39,739: INFO: test_4: Introducing data about account & finishing with the process
+2023-01-02 15:24:02,333: INFO: test_5: Doing a custom search with filters for some restaurants
+
+2023-01-02 15:25:13,008: INFO: test_1: Input Address in order to search
+2023-01-02 15:25:20,218: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:25:28,975: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:26:11,782: INFO: test_2: Placing an order from the restaurant
+
+2023-01-02 15:28:46,714: INFO: test_1: Input Address in order to search
+2023-01-02 15:28:53,959: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:29:03,560: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:29:23,754: INFO: test_2: Placing an order from the restaurant
+
+2023-01-02 15:31:38,937: INFO: test_1: Input Address in order to search
+2023-01-02 15:31:46,157: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:31:56,048: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:32:16,289: INFO: test_2: Placing an order from the restaurant
+
+
+2023-01-02 15:35:03,139: INFO: test_1: Input Address in order to search
+2023-01-02 15:35:10,405: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:35:19,306: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:35:39,534: INFO: test_2: Placing an order from the restaurant
+2023-01-02 15:37:55,172: INFO: test_1: Input Address in order to search
+2023-01-02 15:38:02,401: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:38:11,342: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:38:32,550: INFO: test_2: Placing an order from the restaurant
+2023-01-02 15:42:17,667: INFO: test_1: Input Address in order to search
+2023-01-02 15:42:24,924: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:42:35,584: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:42:55,887: INFO: test_2: Placing an order from the restaurant
+2023-01-02 15:52:00,314: INFO: test_1: Input Address in order to search
+2023-01-02 15:52:07,536: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:52:16,181: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:52:36,422: INFO: test_2: Placing an order from the restaurant
+2023-01-02 15:53:56,985: INFO: test_1: Input Address in order to search
+2023-01-02 15:54:04,214: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:54:12,797: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:54:33,026: INFO: test_2: Placing an order from the restaurant
+2023-01-02 15:56:09,468: INFO: test_1: Input Address in order to search
+2023-01-02 15:56:16,719: INFO: test_1: Input first time supplementary info about address
+2023-01-02 15:56:25,400: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 15:56:46,527: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:09:54,405: INFO: test_1: Input Address in order to search
+2023-01-02 16:10:01,619: INFO: test_1: Input first time supplementary info about address
+2023-01-02 16:10:11,176: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 16:10:31,379: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:17:33,538: INFO: test_1: Input Address in order to search
+2023-01-02 16:17:40,766: INFO: test_1: Input first time supplementary info about address
+2023-01-02 16:17:49,479: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 16:18:09,712: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:18:37,192: INFO: test_3: Trying to search for another product and going to the checkout
+2023-01-02 16:18:43,113: INFO: test_4: Confirming the checkout, but prompting on generation of a new account
+2023-01-02 16:19:01,998: INFO: test_4: Confirming the human verification and going trough the process
+2023-01-02 16:19:21,290: INFO: test_4: Introducing data about account & finishing with the process
+2023-01-02 16:19:44,114: INFO: test_5: Doing a custom search with filters for some restaurants
+2023-01-02 16:21:29,854: INFO: test_1: Input Address in order to search
+2023-01-02 16:21:37,076: INFO: test_1: Input first time supplementary info about address
+2023-01-02 16:21:45,799: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 16:22:05,986: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:23:57,378: INFO: test_1: Input Address in order to search
+2023-01-02 16:24:04,588: INFO: test_1: Input first time supplementary info about address
+2023-01-02 16:24:13,951: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 16:24:34,216: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:28:56,450: INFO: test_1: Input Address in order to search
+2023-01-02 16:29:03,670: INFO: test_1: Input first time supplementary info about address
+2023-01-02 16:29:12,620: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 16:29:32,826: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:31:18,485: INFO: test_1: Input Address in order to search
+2023-01-02 16:31:25,710: INFO: test_1: Input first time supplementary info about address
+2023-01-02 16:31:34,409: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 16:31:54,642: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:32:35,326: INFO: test_3: Trying to search for another product and going to the checkout
+2023-01-02 16:32:41,454: INFO: test_4: Confirming the checkout, but prompting on generation of a new account
+2023-01-02 16:33:00,325: INFO: test_4: Confirming the human verification and going trough the process
+2023-01-02 16:33:17,370: INFO: test_4: Introducing data about account & finishing with the process
+2023-01-02 16:33:39,394: INFO: test_5: Doing a custom search with filters for some restaurants
+2023-01-02 16:35:02,201: INFO: test_1: Input Address in order to search
+2023-01-02 16:35:09,402: INFO: test_1: Input first time supplementary info about address
+2023-01-02 16:35:20,234: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 16:35:40,452: INFO: test_2: Placing an order from the restaurant
+2023-01-02 16:36:21,869: INFO: test_3: Trying to search for another product and going to the checkout
+2023-01-02 16:36:28,060: INFO: test_4: Confirming the checkout, but prompting on generation of a new account
+2023-01-02 16:36:46,947: INFO: test_4: Confirming the human verification and going trough the process
+2023-01-02 16:37:04,120: INFO: test_4: Introducing data about account & finishing with the process
+2023-01-02 16:37:26,669: INFO: test_5: Doing a custom search with filters for some restaurants

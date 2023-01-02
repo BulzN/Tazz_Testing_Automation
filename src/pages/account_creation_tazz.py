@@ -32,7 +32,9 @@ class AccountCreation(PageFactory):
         "next_chechout_step":
             ("XPATH", "/html/body/tz-cart/div/div/div[2]/div/a"),
         "begin_new_account_btn":
-            ("XPATH", "/html/body/main/div/div[1]/a")
+            ("XPATH", "/html/body/main/div/div[1]/a"),
+        "reference_verification":
+            ("XPATH", "//*[@id='root']/div/form/div[1]")
     }
 
     def checkout_step(self):
@@ -45,20 +47,24 @@ class AccountCreation(PageFactory):
         self.begin_human_verification_btn.click()
         time.sleep(1.765)
 
+        element = self.reference_verification
+        action = ActionChains(self.driver)
+        action.move_to_element(element)
+        action.perform()
+        time.sleep(15)
 
-    # def introduce_data_account(self):
-    #     self.begin_new_account_btn.click()
-    #     time.sleep(1.765)
-    #     self.name_account.set_text("John Smith")
-    #     time.sleep(1.765)
-    #     self.email_account.set_text("ledubeqe@cyclelove.cc")
-    #     time.sleep(1.765)
-    #     self.telephone_account.set_text("0774948611")
-    #     time.sleep(1.765)
-    #     self.password_account.set_text("justfy123$")
-    #     time.sleep(1.765)
-    #     self.accept_conditions_btn.click()
-    #     time.sleep(1.765)
-    #     self.cnf_acc_creation_btn.click()
-    #     time.sleep(1.765)
+
+    def introduce_data_account(self):
+        self.begin_new_account_btn.click()
+        time.sleep(1.765)
+        self.name_account.set_text("John Smith")
+        time.sleep(1.765)
+        self.email_account.set_text("ledubeqe@cyclelove.cc")
+        time.sleep(1.765)
+        self.telephone_account.set_text("0774948611")
+        time.sleep(1.765)
+        self.password_account.set_text("justfy123$A")
+        time.sleep(1.765)
+        self.accept_conditions_btn.click()
+        time.sleep(1.765)
 

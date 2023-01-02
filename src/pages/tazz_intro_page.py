@@ -61,7 +61,7 @@ class IntroPage(PageFactory):
             ("XPATH", "/html/body/div[2]/main/tz-widget-market/div/div/div/div/div/a[4]"),
         # NOT_GENERAL (Preferred custom XPATH ) - Test 3
         "select_item_other":
-            ("XPATH", "//*[@id='product-486862']/div/div/div[2]"),
+            ("XPATH", "//*[@id='product-16504135']/div/div/div[3]"),
         # NOT_GENERAL (Preferred custom XPATH ) - Test 3
         "confirm_other_btn":
             ("XPATH", "/html/body/tz-dialog/div[1]/div/div[2]/div/tz-product-dialog/div/div[2]/div/div/button"),
@@ -70,7 +70,10 @@ class IntroPage(PageFactory):
             ("XPATH", "/html/body/header/tz-header-box/div/div/tz-cart-box"),
         # General Sub-Menu Checkout BTN
         "to_checkout":
-            ("XPATH", "/html/body/header/tz-header-box/div/div/tz-cart-box/div[1]/div[2]/div/a")
+            ("XPATH", "/html/body/header/tz-header-box/div/div/tz-cart-box/div[1]/div[2]/div/a"),
+        # NOT_GENERAL (Preferred custom XPATH ) - Test 3
+        "delete_checkout":
+            ("XPATH", "/html/body/tz-dialog/div[1]/div/div[2]/div/tz-product-dialog/div/div[2]/div[4]/div[1]")
 
     }
 
@@ -141,6 +144,9 @@ class IntroPage(PageFactory):
         self.select_item_other.click()
         time.sleep(1.765)
         self.confirm_other_btn.click()
+        time.sleep(1.765)
+
+        self.delete_checkout.click()
         time.sleep(1.765)
 
         sub_menu = self.cart_submenu

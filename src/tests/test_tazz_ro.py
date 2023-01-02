@@ -64,3 +64,7 @@ class TestTazz(ReportClass):
         acc_creation.human_verification()
         log.info("Confirming the human verification and going trough the process")
         time.sleep(1.765)
+
+        acc_creation.introduce_data_account()
+        log.info("Introducing data about account & finishing with the process")
+        time.sleep(1.765)

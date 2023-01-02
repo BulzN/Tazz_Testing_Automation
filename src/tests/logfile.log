@@ -251,3 +251,25 @@
 2023-01-01 21:16:52,283: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
 2023-01-01 21:17:12,486: INFO: test_2: Placing an order from the restaurant
 2023-01-01 21:17:57,249: INFO: test_3: Trying to search for another product and going to the checkout
+2023-01-02 13:30:32,235: INFO: test_1: Input Address in order to search
+2023-01-02 13:30:39,549: INFO: test_1: Input first time supplementary info about address
+2023-01-02 13:30:50,032: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 13:31:10,673: INFO: test_2: Placing an order from the restaurant
+2023-01-02 13:36:28,229: INFO: test_1: Input Address in order to search
+2023-01-02 13:36:35,731: INFO: test_1: Input first time supplementary info about address
+2023-01-02 13:36:45,112: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 13:37:06,109: INFO: test_2: Placing an order from the restaurant
+2023-01-02 13:41:17,579: INFO: test_1: Input Address in order to search
+2023-01-02 13:41:25,156: INFO: test_1: Input first time supplementary info about address
+2023-01-02 13:41:36,532: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 13:41:57,541: INFO: test_2: Placing an order from the restaurant
+2023-01-02 13:42:25,314: INFO: test_3: Trying to search for another product and going to the checkout
+2023-01-02 13:42:31,948: INFO: test_4: Confirming the checkout, but prompting on generation of a new account
+2023-01-02 13:46:13,897: INFO: test_1: Input Address in order to search
+2023-01-02 13:46:21,346: INFO: test_1: Input first time supplementary info about address
+2023-01-02 13:46:32,322: INFO: test_2: Searching for the Restaurant 'Big Belly' & selecting it
+2023-01-02 13:46:53,317: INFO: test_2: Placing an order from the restaurant
+2023-01-02 13:47:21,567: INFO: test_3: Trying to search for another product and going to the checkout
+2023-01-02 13:47:28,083: INFO: test_4: Confirming the checkout, but prompting on generation of a new account
+2023-01-02 13:47:47,143: INFO: test_4: Confirming the human verification and going trough the process
+2023-01-02 13:48:01,815: INFO: test_4: Introducing data about account & finishing with the process
